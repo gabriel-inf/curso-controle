@@ -1,7 +1,11 @@
-package com.curso.controle.model;
+package com.curso.model.pessoa;
 
-import com.curso.controle.*;
+import javax.persistence.Entity;
 
+import com.curso.FuncoesEnum;
+import com.curso.ParoquiasEnum;
+
+@Entity
 public class Pessoa{
 
     private Integer id;
@@ -39,7 +43,35 @@ public class Pessoa{
     public ParoquiasEnum getParoquia() {
         return paroquia;
     }
+
+    /**
+     * @return the cpf
+     */
+    public String getCpf() {
+        return cpf;
+    }
+
+    /**
+     * @return the onibus
+     */
+    public Integer getOnibus() {
+        return onibus;
+    }
+
+    /**
+     * @return the quarto
+     */
+    public Integer getQuarto() {
+        return quarto;
+    }
     
+    /**
+     * @return the tamanhoCamisa
+     */
+    public char getTamanhoCamisa() {
+        return tamanhoCamisa;
+    }
+
     /**
      * @param funcao the funcao to set
      */
@@ -66,6 +98,33 @@ public class Pessoa{
         this.paroquia = paroquia;
     }
 
+    /**
+     * @param cpf the cpf to set
+     */
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    /**
+     * @param onibus the onibus to set
+     */
+    public void setOnibus(Integer onibus) {
+        this.onibus = onibus;
+    }
+
+    /**
+     * @param quarto the quarto to set
+     */
+    public void setQuarto(Integer quarto) {
+        this.quarto = quarto;
+    }
+
+    /**
+     * @param tamanhoCamisa the tamanhoCamisa to set
+     */
+    public void setTamanhoCamisa(char tamanhoCamisa) {
+        this.tamanhoCamisa = tamanhoCamisa;
+    }
 
 
 

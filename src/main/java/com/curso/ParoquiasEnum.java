@@ -1,4 +1,4 @@
-package com.curso.controle;
+package com.curso;
 
 public enum ParoquiasEnum{
     IC,
