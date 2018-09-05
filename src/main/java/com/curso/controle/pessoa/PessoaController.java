@@ -16,14 +16,11 @@ public class PessoaController{
 
     @Autowired
     private PessoaRepository pessoaRepo; 
-
-
+    
     @GetMapping("/listarPessoas")
     public Iterable<Pessoa> listarPessoas(){
         return this.pessoaRepo.findAll(); 
     }
-
-
 
 
 }
