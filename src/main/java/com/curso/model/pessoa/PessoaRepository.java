@@ -1,8 +1,8 @@
 package com.curso.model.pessoa;
 
-public class PessoaRepository{
-    
 
+import org.springframework.data.repository.CrudRepository;
 
-
+public interface PessoaRepository extends CrudRepository<Pessoa, Long>{
+    public Iterable<Pessoa> findAllByOrderByNomeAsc(); 
 }

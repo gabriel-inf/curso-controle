@@ -1,6 +1,9 @@
 package com.curso.model.pessoa;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.curso.FuncoesEnum;
 import com.curso.ParoquiasEnum;
@@ -8,6 +11,8 @@ import com.curso.ParoquiasEnum;
 @Entity
 public class Pessoa{
 
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private String nome;
     private ParoquiasEnum paroquia;
@@ -17,6 +22,10 @@ public class Pessoa{
     private Integer quarto;
     private Integer onibus;
 
+
+    public Pessoa(){
+
+    }
 
     /**
      * @return the funcao
