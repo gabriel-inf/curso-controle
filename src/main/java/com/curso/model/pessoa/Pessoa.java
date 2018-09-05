@@ -27,6 +27,19 @@ public class Pessoa{
 
     }
 
+    public Pessoa(String nome, ParoquiasEnum paroquia, FuncoesEnum funcao, String cpf, char tamanhoCamisa, Integer quarto, Integer onibus){
+       
+        this.nome = nome;
+        this.paroquia = paroquia;
+        this.funcao = funcao;
+        this.cpf = cpf;
+        this.tamanhoCamisa = tamanhoCamisa;
+        this.quarto = quarto;
+        this.onibus = onibus;
+    }
+
+  
+
     /**
      * @return the funcao
      */
