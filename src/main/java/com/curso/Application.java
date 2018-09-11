@@ -1,5 +1,7 @@
 package com.curso;
 
+import com.curso.model.monitor.Monitor;
+import com.curso.model.monitor.MonitorRepository;
 import com.curso.model.pessoa.Pessoa;
 import com.curso.model.pessoa.PessoaRepository;
 
@@ -16,7 +18,10 @@ public class Application implements CommandLineRunner{
 
 
 	@Autowired
-    private PessoaRepository repository;
+	private PessoaRepository repository;
+	
+	@Autowired
+	private MonitorRepository repo; 
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
@@ -26,6 +31,17 @@ public class Application implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		repository.save(new Pessoa("Gabriel", ParoquiasEnum.ES, FuncoesEnum.COORDENADOR, "026.616.640-76", 'm', 13, 2));
+		
+		Monitor m1 = new Monitor("Gabriel", ParoquiasEnum.ES,  "026.616.640-76", 'm', 13, 2,
+				FuncoesEnum.COORDENADOR);
+		Monitor m2 = new Monitor("Bruno", ParoquiasEnum.ES,  "026.623.640-12", 'm', 13, 2,
+				FuncoesEnum.COORDENADOR);
+	
+		repo.save(m1);
+		repo.save(m2);
+
+		System.out.println(repo.findAll().toString());
+		
+	
 	}
 }

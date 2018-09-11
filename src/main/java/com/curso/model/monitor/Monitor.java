@@ -1,11 +1,28 @@
 package com.curso.model.monitor;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
 import com.curso.FuncoesEnum;
+import com.curso.ParoquiasEnum;
 import com.curso.model.pessoa.Pessoa;
 
+@Entity
+@DiscriminatorValue( value="MON" )
 public class Monitor extends Pessoa{
     
     private FuncoesEnum funcao;
+
+    public Monitor(){
+        super();
+    }
+
+    public Monitor(String nome, ParoquiasEnum paroquia,
+    String cpf, char tamanhoCamisa, 
+    Integer quarto, Integer onibus, FuncoesEnum funcao){
+    super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus);    
+    this.funcao = funcao;
+}
 
     /**
      * @return the funcao

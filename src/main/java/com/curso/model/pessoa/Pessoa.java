@@ -30,7 +30,7 @@ public class Pessoa {
 
     }
 
-    public Pessoa(String nome, ParoquiasEnum paroquia, FuncoesEnum funcao, String cpf, char tamanhoCamisa,
+    public Pessoa(String nome, ParoquiasEnum paroquia, String cpf, char tamanhoCamisa,
             Integer quarto, Integer onibus) {
 
         this.nome = nome;
