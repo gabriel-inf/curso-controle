@@ -11,26 +11,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestBody;
 
-
-
 @RestController
-@RequestMapping("/")
-public class PessoaController{
+@RequestMapping("/pessoa")
+public class PessoaController {
 
     @Autowired
-    private PessoaRepository pessoaRepo; 
+    private PessoaRepository pessoaRepo;
 
-    @GetMapping("/listarPessoas")
-    public Iterable<Pessoa> listarPessoas(){
-        return this.pessoaRepo.findAll(); 
+    @GetMapping("/listar")
+    public Iterable<Pessoa> listarPessoas() {
+        return this.pessoaRepo.findAll();
     }
 
-    @PostMapping(value="/cadastrarPessoa")
-    public Pessoa postMethodName(@RequestBody Pessoa novaPessoa) {        
+    @PostMapping("/cadastrar")
+    public Pessoa postMethodName(@RequestBody Pessoa novaPessoa) {
         return pessoaRepo.save(novaPessoa);
     }
-    
-
-
 
 }
