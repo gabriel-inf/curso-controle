@@ -1,50 +1,44 @@
 package com.curso.model.pessoa;
 
+import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
 import com.curso.FuncoesEnum;
 import com.curso.ParoquiasEnum;
 
 @Entity
-public class Pessoa{
+@Inheritance (strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn( name = "type" )
+public class Pessoa {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String nome;
     private ParoquiasEnum paroquia;
-    private FuncoesEnum funcao;
     private String cpf;
     private char tamanhoCamisa;
     private Integer quarto;
     private Integer onibus;
 
-
-    public Pessoa(){
+    public Pessoa() {
 
     }
 
-    public Pessoa(String nome, ParoquiasEnum paroquia, FuncoesEnum funcao, String cpf, char tamanhoCamisa, Integer quarto, Integer onibus){
-       
+    public Pessoa(String nome, ParoquiasEnum paroquia, FuncoesEnum funcao, String cpf, char tamanhoCamisa,
+            Integer quarto, Integer onibus) {
+
         this.nome = nome;
         this.paroquia = paroquia;
-        this.funcao = funcao;
         this.cpf = cpf;
         this.tamanhoCamisa = tamanhoCamisa;
         this.quarto = quarto;
         this.onibus = onibus;
-    }
-
-  
-
-    /**
-     * @return the funcao
-     */
-    public FuncoesEnum getFuncao() {
-        return funcao;
     }
 
     /**
@@ -53,12 +47,14 @@ public class Pessoa{
     public Integer getId() {
         return id;
     }
+
     /**
      * @return the nome
      */
     public String getNome() {
         return nome;
     }
+
     /**
      * @return the paroquia
      */
@@ -86,7 +82,7 @@ public class Pessoa{
     public Integer getQuarto() {
         return quarto;
     }
-    
+
     /**
      * @return the tamanhoCamisa
      */
@@ -95,24 +91,19 @@ public class Pessoa{
     }
 
     /**
-     * @param funcao the funcao to set
-     */
-    public void setFuncao(FuncoesEnum funcao) {
-        this.funcao = funcao;
-    }
-
-    /**
      * @param id the id to set
      */
     public void setId(Integer id) {
         this.id = id;
     }
+
     /**
      * @param nome the nome to set
      */
     public void setNome(String nome) {
         this.nome = nome;
     }
+
     /**
      * @param paroquia the paroquia to set
      */
@@ -148,8 +139,4 @@ public class Pessoa{
         this.tamanhoCamisa = tamanhoCamisa;
     }
 
-
-
-
-    
 }
