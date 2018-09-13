@@ -25,6 +25,7 @@ public class Pessoa {
     private char tamanhoCamisa;
     private Integer quarto;
     private Integer onibus;
+    private char sexo;
 
     public Pessoa() {
 
@@ -88,6 +89,20 @@ public class Pessoa {
      */
     public char getTamanhoCamisa() {
         return tamanhoCamisa;
+    }
+
+    /**
+     * @return the sexo
+     */
+    public char getSexo() {
+        return sexo;
+    }
+
+    /**
+     * @param sexo the sexo to set
+     */
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
     }
 
     /**

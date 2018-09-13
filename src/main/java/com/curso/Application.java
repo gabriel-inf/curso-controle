@@ -44,6 +44,9 @@ public class Application implements CommandLineRunner{
 		Monitor m2 = new Monitor("Bruno", ParoquiasEnum.NSFc,  "026.623.640-12", 'm', 13, 2,
 				FuncoesEnum.BASE);
 
+		Monitor m3 = new Monitor("Reba", ParoquiasEnum.ES,  "026.325.151-16", 'p', 12, 2,
+				FuncoesEnum.COORDENADOR);	
+
 		Cursista c1 = new Cursista("Ribelton", ParoquiasEnum.ES,  "026.623.640-12", 'g', 32, 1,
 		"Ele é muito massa, geralmente sabe agir em situações de perigo.");
 
@@ -51,6 +54,7 @@ public class Application implements CommandLineRunner{
 		repository.save(m1);
 		repoMonitor.save(m2);
 		repoCursista.save(c1);
+		repository.save(m3);
 
 
 		
