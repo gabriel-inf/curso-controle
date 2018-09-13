@@ -32,7 +32,7 @@ public class Pessoa {
     }
 
     public Pessoa(String nome, ParoquiasEnum paroquia, String cpf, char tamanhoCamisa,
-            Integer quarto, Integer onibus) {
+            Integer quarto, Integer onibus, char sexo) {
 
         this.nome = nome;
         this.paroquia = paroquia;
@@ -40,6 +40,7 @@ public class Pessoa {
         this.tamanhoCamisa = tamanhoCamisa;
         this.quarto = quarto;
         this.onibus = onibus;
+        this.sexo = sexo;
     }
 
     /**

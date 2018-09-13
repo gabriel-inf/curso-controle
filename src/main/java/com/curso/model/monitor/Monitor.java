@@ -19,8 +19,8 @@ public class Monitor extends Pessoa{
 
     public Monitor(String nome, ParoquiasEnum paroquia,
     String cpf, char tamanhoCamisa, 
-    Integer quarto, Integer onibus, FuncoesEnum funcao){
-    super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus);    
+    Integer quarto, Integer onibus, FuncoesEnum funcao, char sexo){
+    super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus, sexo);    
     this.funcao = funcao;
 }
 
