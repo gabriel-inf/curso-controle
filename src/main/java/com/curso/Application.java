@@ -40,24 +40,21 @@ public class Application implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		
 		Monitor m1 = new Monitor("Gabriel", ParoquiasEnum.ES,  "026.616.640-76", 'm', 13, 2,
-				FuncoesEnum.COORDENADOR, 'm');
+				FuncoesEnum.COORDENADOR, 'm', true);
 		Monitor m2 = new Monitor("Bruno", ParoquiasEnum.NSFc,  "026.623.640-12", 'm', 13, 2,
-				FuncoesEnum.BASE, 'm');
+				FuncoesEnum.BASE, 'm', true);
 
 		Monitor m3 = new Monitor("Reba", ParoquiasEnum.ES,  "026.325.151-16", 'p', 12, 2,
-				FuncoesEnum.COORDENADOR, 'f');	
+				FuncoesEnum.COORDENADOR, 'f', true);	
 
 		Cursista c1 = new Cursista("Ribelton", ParoquiasEnum.ES,  "026.623.640-12", 'g', 32, 1,
-		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm');
+		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png");
 
 	
-		repository.save(m1);
-		repoMonitor.save(m2);
-		repoCursista.save(c1);
-		repository.save(m3);
-
-
-		
+		// repository.save(m1);
+		// repoMonitor.save(m2);
+		// repoCursista.save(c1);
+		// repository.save(m3);	
 		
 	
 	}

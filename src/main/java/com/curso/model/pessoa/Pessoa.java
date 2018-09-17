@@ -18,6 +18,7 @@ public class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+
     private Integer id;
     private String nome;
     private ParoquiasEnum paroquia;
@@ -26,13 +27,15 @@ public class Pessoa {
     private Integer quarto;
     private Integer onibus;
     private char sexo;
+    private Boolean ativa;
+
 
     public Pessoa() {
 
     }
 
     public Pessoa(String nome, ParoquiasEnum paroquia, String cpf, char tamanhoCamisa,
-            Integer quarto, Integer onibus, char sexo) {
+            Integer quarto, Integer onibus, char sexo, Boolean ativa) {
 
         this.nome = nome;
         this.paroquia = paroquia;
@@ -41,7 +44,23 @@ public class Pessoa {
         this.quarto = quarto;
         this.onibus = onibus;
         this.sexo = sexo;
+        this.ativa = ativa;
+      
     }
+
+    /**
+     * @return the ativa
+     */
+    public Boolean getAtiva() {
+        return ativa;
+    }
+    /**
+     * @param ativa the ativa to set
+     */
+    public void setAtiva(Boolean ativa) {
+        this.ativa = ativa;
+    }
+
 
     /**
      * @return the id

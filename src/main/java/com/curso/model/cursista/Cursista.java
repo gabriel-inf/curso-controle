@@ -12,6 +12,7 @@ import com.curso.model.pessoa.Pessoa;
 public class Cursista extends Pessoa{
 
     private String descricao;
+    private String foto;
 
     public Cursista(){
         super();
@@ -19,9 +20,24 @@ public class Cursista extends Pessoa{
 
     public Cursista(String nome, ParoquiasEnum paroquia,
         String cpf, char tamanhoCamisa, 
-        Integer quarto, Integer onibus, String descricao, char sexo){
-        super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus, sexo);    
+        Integer quarto, Integer onibus, String descricao, char sexo, Boolean ativa, String foto){
+        super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus, sexo, ativa);    
         this.descricao = descricao;
+        this.foto = foto;
+    }
+
+    /**
+     * @return the foto
+     */
+    public String getFoto() {
+        return foto;
+    }
+
+    /**
+     * @param foto the foto to set
+     */
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     /**
