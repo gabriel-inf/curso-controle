@@ -14,4 +14,4 @@ public interface MonitorRepository extends CrudRepository<Monitor, Long> {
     @Query ("UPDATE Monitor m SET m.ativa=false WHERE :id=m.id")
     public int desativarMonitor(@Param("id") Long id); 
 
-}
+}   

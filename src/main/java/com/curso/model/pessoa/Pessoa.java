@@ -19,7 +19,7 @@ public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    private Integer id;
+    private Long id;
     private String nome;
     private ParoquiasEnum paroquia;
     private String cpf;
@@ -65,7 +65,7 @@ public class Pessoa {
     /**
      * @return the id
      */
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
@@ -128,7 +128,7 @@ public class Pessoa {
     /**
      * @param id the id to set
      */
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -21,4 +21,8 @@ public enum ParoquiasEnum{
         this.valor = valorParoquia;
     }
 
+    public String getValue(){
+        return this.valor;
+    }
+
 }
