@@ -1,26 +1,24 @@
 package com.curso;
 
 public enum ParoquiasEnum{
-    IC,
-    SMG,
-    SR,
-    SP,
-    SA,
-    NSFc,
-    NSAe,
-    NSCAR,
-    ES,
-    NSR,
-    SV,
-    NSG,
-    SL,
-    NSC,
-    NSAc,
-    SSC,
-    SCJ,
-    SI,
-    NSFs,
-    SAMC,
-    ICM
+    IC("IC"), SMG("SMG"), SR("SR"), SP("SP"), SA("SA"),
+    NSFc("NSFc"), NSAe("NSAe"), NSCAR("NSCAR"), ES("ES"),
+    NSR("NSR"), SV("SV"),
+    NSG("NSG"),
+    SL("SL"),
+    NSC("NSC"),
+    NSAc("NSAC"),
+    SSC("SSC"),
+    SCJ("SCJ"),
+    SI("SI"),
+    NSFs("NSFs"),
+    SAMC("SAMC"),
+    ICM("ICM");
+
+    private String valor;
+
+    private ParoquiasEnum(String valorParoquia){
+        this.valor = valorParoquia;
+    }
 
 }
