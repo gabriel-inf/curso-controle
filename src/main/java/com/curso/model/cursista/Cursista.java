@@ -13,6 +13,7 @@ public class Cursista extends Pessoa{
 
     private String descricao;
     private String foto;
+    private Boolean canhoto; 
 
     public Cursista(){
         super();
@@ -21,10 +22,26 @@ public class Cursista extends Pessoa{
     public Cursista(String nome, ParoquiasEnum paroquia,
         String cpf, char tamanhoCamisa, 
         Integer quarto, Integer onibus, String descricao, 
-        char sexo, Boolean ativa, String foto){
+        char sexo, Boolean ativa, String foto, Boolean canhoto){
         super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus, sexo, ativa);    
         this.descricao = descricao;
         this.foto = foto;
+        this.canhoto = canhoto;
+
+    }
+
+    /**
+     * @return the canhoto
+     */
+    public Boolean getCanhoto() {
+        return canhoto;
+    }
+
+    /**
+     * @param canhoto the canhoto to set
+     */
+    public void setCanhoto(Boolean canhoto) {
+        this.canhoto = canhoto;
     }
 
     /**
