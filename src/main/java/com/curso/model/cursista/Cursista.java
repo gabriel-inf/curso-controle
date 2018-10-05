@@ -2,6 +2,8 @@ package com.curso.model.cursista;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.*;
+
 
 import com.curso.FuncoesEnum;
 import com.curso.ParoquiasEnum;
@@ -11,9 +13,12 @@ import com.curso.model.pessoa.Pessoa;
 @DiscriminatorValue( value="CUR" )
 public class Cursista extends Pessoa{
 
+    @Column (length = 10000)
     private String descricao;
+    @Column (length = 1000)
     private String foto;
     private Boolean canhoto; 
+    private String comunidade;
 
     public Cursista(){
         super();
@@ -22,12 +27,27 @@ public class Cursista extends Pessoa{
     public Cursista(String nome, ParoquiasEnum paroquia,
         String cpf, char tamanhoCamisa, 
         String quarto, Integer onibus, String descricao, 
-        char sexo, Boolean ativa, String foto, Boolean canhoto){
+        char sexo, Boolean ativa, String foto, Boolean canhoto, String comunidade){
         super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus, sexo, ativa);    
         this.descricao = descricao;
         this.foto = foto;
         this.canhoto = canhoto;
+        this.comunidade = comunidade;
 
+    }
+
+
+    /**
+     * @return the comunidade
+     */
+    public String getComunidade() {
+        return comunidade;
+    }
+    /**
+     * @param comunidade the comunidade to set
+     */
+    public void setComunidade(String comunidade) {
+        this.comunidade = comunidade;
     }
 
     /**

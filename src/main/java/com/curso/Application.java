@@ -48,16 +48,16 @@ public class Application implements CommandLineRunner{
 				FuncoesEnum.COORDENADOR, 'f', true);	
 
 		Cursista c1 = new Cursista("Ribelton", ParoquiasEnum.ES,  "026.623.640-12", 'g', "Quarto4", 1,
-		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false);
+		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false, "Árvore");
 
 		Cursista c2 = new Cursista("Artur", ParoquiasEnum.ES,  "026.623.640-12", 'g', "Quarto3", 1,
-		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", true);
+		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", true,"Árvore");
 
 		Cursista c3 = new Cursista("Roger", ParoquiasEnum.ES,  "026.623.640-12", 'g', "Quarto8", 1,
-		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", true);
+		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", true, "Árvore");
 
 		Cursista c4 = new Cursista("Amanda", ParoquiasEnum.ES,  "026.623.640-12", 'g', "Quarto10", 1,
-		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false);
+		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false, "Árvore");
 
 	
 		repository.save(m1);
