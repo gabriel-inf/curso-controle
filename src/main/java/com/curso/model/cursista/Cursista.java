@@ -21,7 +21,7 @@ public class Cursista extends Pessoa{
 
     public Cursista(String nome, ParoquiasEnum paroquia,
         String cpf, char tamanhoCamisa, 
-        Integer quarto, Integer onibus, String descricao, 
+        String quarto, Integer onibus, String descricao, 
         char sexo, Boolean ativa, String foto, Boolean canhoto){
         super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus, sexo, ativa);    
         this.descricao = descricao;

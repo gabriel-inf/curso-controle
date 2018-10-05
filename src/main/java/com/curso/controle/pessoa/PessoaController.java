@@ -67,7 +67,7 @@ public class PessoaController {
         return this.pessoaRepo.findById(id).map(pessoa -> {
             pessoa.setNome(newObjPessoa.getNome());
             pessoa.setAtiva(newObjPessoa.getAtiva());
-            pessoa.setCpf(newObjPessoa.getCpf());
+            pessoa.setRg(newObjPessoa.getRg());
             pessoa.setOnibus(newObjPessoa.getOnibus());
             pessoa.setParoquia(newObjPessoa.getParoquia());
             pessoa.setQuarto(newObjPessoa.getQuarto());

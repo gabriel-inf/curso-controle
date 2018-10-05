@@ -44,7 +44,7 @@ public class CursistaController {
             cursista.setNome(novoCursista.getNome());
             cursista.setAtiva(novoCursista.getAtiva());
             cursista.setCanhoto(novoCursista.getCanhoto());
-            cursista.setCpf(novoCursista.getCpf());
+            cursista.setRg(novoCursista.getRg());
             cursista.setDescricao(novoCursista.getDescricao());
             cursista.setFoto(novoCursista.getDescricao());
             cursista.setFoto(novoCursista.getFoto());

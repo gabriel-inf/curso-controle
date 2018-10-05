@@ -22,9 +22,9 @@ public class Pessoa {
     private Long id;
     private String nome;
     private ParoquiasEnum paroquia;
-    private String cpf;
+    private String rg;
     private char tamanhoCamisa;
-    private Integer quarto;
+    private String quarto;
     private Integer onibus;
     private char sexo;
     private Boolean ativa;
@@ -34,12 +34,12 @@ public class Pessoa {
 
     }
 
-    public Pessoa(String nome, ParoquiasEnum paroquia, String cpf, char tamanhoCamisa,
-            Integer quarto, Integer onibus, char sexo, Boolean ativa) {
+    public Pessoa(String nome, ParoquiasEnum paroquia, String rg, char tamanhoCamisa,
+            String quarto, Integer onibus, char sexo, Boolean ativa) {
 
         this.nome = nome;
         this.paroquia = paroquia;
-        this.cpf = cpf;
+        this.rg = rg;
         this.tamanhoCamisa = tamanhoCamisa;
         this.quarto = quarto;
         this.onibus = onibus;
@@ -84,10 +84,10 @@ public class Pessoa {
     }
 
     /**
-     * @return the cpf
+     * @return the rg
      */
-    public String getCpf() {
-        return cpf;
+    public String getRg() {
+        return rg;
     }
 
     /**
@@ -100,7 +100,7 @@ public class Pessoa {
     /**
      * @return the quarto
      */
-    public Integer getQuarto() {
+    public String getQuarto() {
         return quarto;
     }
 
@@ -147,10 +147,10 @@ public class Pessoa {
     }
 
     /**
-     * @param cpf the cpf to set
+     * @param rg the rg to set
      */
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setRg(String rg) {
+        this.rg = rg;
     }
 
     /**
@@ -163,7 +163,7 @@ public class Pessoa {
     /**
      * @param quarto the quarto to set
      */
-    public void setQuarto(Integer quarto) {
+    public void setQuarto(String quarto) {
         this.quarto = quarto;
     }
 
