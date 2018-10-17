@@ -57,16 +57,6 @@ public class Application implements CommandLineRunner{
 		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", true, "Árvore");
 
 		Cursista c4 = new Cursista("Amanda", ParoquiasEnum.ES,  "026.623.640-12", 'g', "Quarto10", 1,
-		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false, "Árvore");
-
-	
-		repository.save(m1);
-		repoMonitor.save(m2);
-		repoCursista.save(c2);
-		repoCursista.save(c3);
-		repoCursista.save(c4);
-		repository.save(m3);	
-		
-	
+		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false, "Árvore");		
 	}
 }
