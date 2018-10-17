@@ -60,12 +60,12 @@ public class Application implements CommandLineRunner{
 		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false, "Árvore");
 
 	
-		// repository.save(m1);
-		// repoMonitor.save(m2);
-		// repoCursista.save(c2);
-		// repoCursista.save(c3);
-		// repoCursista.save(c4);
-		// repository.save(m3);	
+		repository.save(m1);
+		repoMonitor.save(m2);
+		repoCursista.save(c2);
+		repoCursista.save(c3);
+		repoCursista.save(c4);
+		repository.save(m3);	
 		
 	
 	}
