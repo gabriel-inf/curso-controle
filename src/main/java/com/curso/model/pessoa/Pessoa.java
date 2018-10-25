@@ -23,7 +23,7 @@ public class Pessoa {
     private String nome;
     private ParoquiasEnum paroquia;
     private String rg;
-    private char tamanhoCamisa;
+    private String tamanhoCamisa;
     private String quarto;
     private Integer onibus;
     private char sexo;
@@ -34,7 +34,7 @@ public class Pessoa {
 
     }
 
-    public Pessoa(String nome, ParoquiasEnum paroquia, String rg, char tamanhoCamisa,
+    public Pessoa(String nome, ParoquiasEnum paroquia, String rg, String tamanhoCamisa,
             String quarto, Integer onibus, char sexo, Boolean ativa) {
 
         this.nome = nome;
@@ -107,7 +107,7 @@ public class Pessoa {
     /**
      * @return the tamanhoCamisa
      */
-    public char getTamanhoCamisa() {
+    public String getTamanhoCamisa() {
         return tamanhoCamisa;
     }
 
@@ -170,7 +170,7 @@ public class Pessoa {
     /**
      * @param tamanhoCamisa the tamanhoCamisa to set
      */
-    public void setTamanhoCamisa(char tamanhoCamisa) {
+    public void setTamanhoCamisa(String tamanhoCamisa) {
         this.tamanhoCamisa = tamanhoCamisa;
     }
 

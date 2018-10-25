@@ -25,7 +25,7 @@ public class Cursista extends Pessoa{
     }
 
     public Cursista(String nome, ParoquiasEnum paroquia,
-        String cpf, char tamanhoCamisa, 
+        String cpf, String tamanhoCamisa, 
         String quarto, Integer onibus, String descricao, 
         char sexo, Boolean ativa, String foto, Boolean canhoto, String comunidade){
         super(nome, paroquia, cpf, tamanhoCamisa, quarto, onibus, sexo, ativa);    
