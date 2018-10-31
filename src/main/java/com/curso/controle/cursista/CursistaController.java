@@ -53,6 +53,8 @@ public class CursistaController {
             cursista.setQuarto(novoCursista.getQuarto());
             cursista.setSexo(novoCursista.getSexo());
             cursista.setTamanhoCamisa(novoCursista.getTamanhoCamisa());
+            cursista.setComunidade(novoCursista.getComunidade());
+
             return this.cursistaRepo.save(cursista);
 
         }).orElseGet(() -> {
@@ -65,6 +67,11 @@ public class CursistaController {
         Cursista c = this.cursistaRepo.findById(id).get();
         c.setAtiva(false);
         this.cursistaRepo.save(c);
+    }
+
+    @GetMapping("/comunidade/{c}")
+    public Iterable<Cursista> getAllByComunity(@PathVariable String c){
+        return this.cursistaRepo.findAllByComunidade(c);
     }
 
     

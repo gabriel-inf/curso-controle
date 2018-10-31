@@ -58,5 +58,8 @@ public class Application implements CommandLineRunner{
 
 		Cursista c4 = new Cursista("Amanda", ParoquiasEnum.ES,  "026.623.640-12", "g", "Quarto10", 1,
 		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false, "Árvore");		
+	
+	
+	
 	}
 }
