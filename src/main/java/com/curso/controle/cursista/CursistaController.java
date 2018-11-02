@@ -65,8 +65,7 @@ public class CursistaController {
     @DeleteMapping("/{id}")
     public void deactivateCursista(@PathVariable Long id) {
         Cursista c = this.cursistaRepo.findById(id).get();
-        c.setAtiva(false);
-        this.cursistaRepo.save(c);
+        this.cursistaRepo.delete(c);
     }
 
     @GetMapping("/comunidade/{c}")
