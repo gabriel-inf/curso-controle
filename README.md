@@ -5,7 +5,7 @@ Uma solução criada para tornar o gerenciamento de cursos do CLJ uma tarefa mai
 
 Esse projeto é o *backend* da solução e foi construído em Java 1.8 com auxílio do framework Spring e também do MVN para empacotar o projeto e tratar as dependências. 
 
-O projeto é composto por outra entidade de frontend frito em Angular 6.
+O projeto é composto por outra entidade de frontend feioqu em Angular 6.
 
 Para clonar o projeto:
 
