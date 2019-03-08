@@ -1,7 +1,8 @@
-package com.curso.model.monitor;
-
+package com.curso.repository;
 
 import java.util.Optional;
+
+import com.curso.model.Monitor;
 
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

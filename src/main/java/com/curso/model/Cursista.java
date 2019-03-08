@@ -1,13 +1,12 @@
-package com.curso.model.cursista;
+package com.curso.model;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.*;
 
 
-import com.curso.FuncoesEnum;
 import com.curso.ParoquiasEnum;
-import com.curso.model.pessoa.Pessoa;
+
 
 @Entity
 @DiscriminatorValue( value="CUR" )

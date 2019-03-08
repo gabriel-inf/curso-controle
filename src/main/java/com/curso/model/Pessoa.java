@@ -1,5 +1,4 @@
-package com.curso.model.pessoa;
-
+package com.curso.model;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +7,6 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
-import com.curso.FuncoesEnum;
 import com.curso.ParoquiasEnum;
 
 @Entity

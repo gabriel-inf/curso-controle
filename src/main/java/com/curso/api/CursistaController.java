@@ -2,8 +2,8 @@ package com.curso.controle.cursista;
 
 import javax.websocket.server.PathParam;
 
-import com.curso.model.cursista.Cursista;
-import com.curso.model.cursista.CursistaRepository;
+import com.curso.model.Cursista;
+import com.curso.repository.CursistaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

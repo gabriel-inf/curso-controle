@@ -1,4 +1,4 @@
-package com.curso.model.paroquia;
+package com.curso.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

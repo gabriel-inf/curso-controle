@@ -1,5 +1,6 @@
-package com.curso.model.pessoa;
+package com.curso.repository;
 
+import com.curso.model.Pessoa;
 
 import org.springframework.data.repository.CrudRepository;
 

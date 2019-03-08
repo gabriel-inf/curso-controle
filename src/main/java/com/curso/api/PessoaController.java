@@ -2,8 +2,8 @@ package com.curso.controle.pessoa;
 
 import java.util.Optional;
 
-import com.curso.model.pessoa.Pessoa;
-import com.curso.model.pessoa.PessoaRepository;
+import com.curso.model.Pessoa;
+import com.curso.repository.PessoaRepository;
 
 import org.hibernate.PropertyNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

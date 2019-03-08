@@ -1,18 +1,16 @@
 package com.curso;
 
-import com.curso.model.cursista.Cursista;
-import com.curso.model.cursista.CursistaRepository;
-import com.curso.model.monitor.Monitor;
-import com.curso.model.monitor.MonitorRepository;
-import com.curso.model.pessoa.Pessoa;
-import com.curso.model.pessoa.PessoaRepository;
-
 import java.util.ArrayList;
 
 import javax.management.loading.ClassLoaderRepository;
 
 import com.curso.FuncoesEnum;
 import com.curso.ParoquiasEnum;
+import com.curso.model.Cursista;
+import com.curso.model.Monitor;
+import com.curso.repository.CursistaRepository;
+import com.curso.repository.MonitorRepository;
+import com.curso.repository.PessoaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
