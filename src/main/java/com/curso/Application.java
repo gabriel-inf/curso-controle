@@ -1,16 +1,16 @@
 package com.curso;
 
-import com.curso.model.cursista.Cursista;
-import com.curso.model.cursista.CursistaRepository;
-import com.curso.model.monitor.Monitor;
-import com.curso.model.monitor.MonitorRepository;
-import com.curso.model.pessoa.Pessoa;
-import com.curso.model.pessoa.PessoaRepository;
+import java.util.ArrayList;
 
 import javax.management.loading.ClassLoaderRepository;
 
 import com.curso.FuncoesEnum;
 import com.curso.ParoquiasEnum;
+import com.curso.model.Cursista;
+import com.curso.model.Monitor;
+import com.curso.repository.CursistaRepository;
+import com.curso.repository.MonitorRepository;
+import com.curso.repository.PessoaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -19,7 +19,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner{
-
 
 	@Autowired
 	private PessoaRepository repository;
@@ -58,8 +57,6 @@ public class Application implements CommandLineRunner{
 
 		Cursista c4 = new Cursista("Amanda", ParoquiasEnum.ES,  "026.623.640-12", "g", "Quarto10", 1,
 		"Ele é muito massa, geralmente sabe agir em situações de perigo.", 'm', false, "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/220px-User_icon_2.svg.png", false, "Árvore");		
-	
-	
-	
+
 	}
 }

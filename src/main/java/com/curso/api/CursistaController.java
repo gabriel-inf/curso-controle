@@ -1,14 +1,11 @@
-package com.curso.controle.cursista;
+package com.curso.api;
 
-import javax.websocket.server.PathParam;
-
-import com.curso.model.cursista.Cursista;
-import com.curso.model.cursista.CursistaRepository;
+import com.curso.model.Cursista;
+import com.curso.repository.CursistaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javassist.NotFoundException;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -72,7 +69,5 @@ public class CursistaController {
     public Iterable<Cursista> getAllByComunity(@PathVariable String c){
         return this.cursistaRepo.findAllByComunidade(c);
     }
-
-    
 
 }

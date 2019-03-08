@@ -1,6 +1,9 @@
-package com.curso.model.cursista;
+package com.curso.repository;
+
+import com.curso.model.Cursista;
 
 import org.springframework.data.repository.CrudRepository;
+
 
 public interface  CursistaRepository extends CrudRepository <Cursista, Long>{
 

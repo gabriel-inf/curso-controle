@@ -1,11 +1,10 @@
-package com.curso.model.monitor;
+package com.curso.model;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 import com.curso.FuncoesEnum;
 import com.curso.ParoquiasEnum;
-import com.curso.model.pessoa.Pessoa;
 
 @Entity
 @DiscriminatorValue( value="MON" )

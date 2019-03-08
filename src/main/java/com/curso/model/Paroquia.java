@@ -1,4 +1,4 @@
-package com.curso.model.paroquia;
+package com.curso.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,7 +8,6 @@ import com.curso.ParoquiasEnum;
 @Entity
 public class Paroquia{
     
-
     @Id
     private Integer id;
     private ParoquiasEnum nome;

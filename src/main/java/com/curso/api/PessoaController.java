@@ -1,16 +1,13 @@
-package com.curso.controle.pessoa;
+package com.curso.api;
 
-import java.util.Optional;
-
-import com.curso.model.pessoa.Pessoa;
-import com.curso.model.pessoa.PessoaRepository;
+import com.curso.model.Pessoa;
+import com.curso.repository.PessoaRepository;
 
 import org.hibernate.PropertyNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.*;
 
-import javassist.NotFoundException;
 
 //@CrossOrigin(origins = "http://localhost:4200")
 @CrossOrigin
@@ -19,7 +16,6 @@ import javassist.NotFoundException;
 public class PessoaController {
 
     // GET, POST, PUT, DELETE
-
     @Autowired
     private PessoaRepository pessoaRepo;
 

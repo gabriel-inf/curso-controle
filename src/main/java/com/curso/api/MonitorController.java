@@ -1,10 +1,8 @@
-package com.curso.controle.monitor;
+package com.curso.api;
 
-import java.util.Optional;
 
-import com.curso.model.monitor.Monitor;
-import com.curso.model.monitor.MonitorRepository;
-import com.curso.model.pessoa.PessoaRepository;
+import com.curso.model.Monitor;
+import com.curso.repository.MonitorRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
