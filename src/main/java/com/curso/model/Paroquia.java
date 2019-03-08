@@ -8,7 +8,6 @@ import com.curso.ParoquiasEnum;
 @Entity
 public class Paroquia{
     
-
     @Id
     private Integer id;
     private ParoquiasEnum nome;

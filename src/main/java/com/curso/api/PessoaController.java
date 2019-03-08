@@ -1,6 +1,4 @@
-package com.curso.controle.pessoa;
-
-import java.util.Optional;
+package com.curso.api;
 
 import com.curso.model.Pessoa;
 import com.curso.repository.PessoaRepository;
@@ -10,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.*;
 
-import javassist.NotFoundException;
 
 //@CrossOrigin(origins = "http://localhost:4200")
 @CrossOrigin
@@ -19,7 +16,6 @@ import javassist.NotFoundException;
 public class PessoaController {
 
     // GET, POST, PUT, DELETE
-
     @Autowired
     private PessoaRepository pessoaRepo;
 
