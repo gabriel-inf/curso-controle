@@ -30,3 +30,7 @@ Starting the database:
 - Java
 - JPA
 - Restful API
+
+# Integration test master
+
+[![Build Status](https://travis-ci.com/gabriel-inf/curso-controle.svg?branch=master)](https://travis-ci.com/gabriel-inf/curso-controle)
